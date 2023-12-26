@@ -22,7 +22,7 @@ Get-ChildItem -Recurse -Language * . |  ForEach-Object {
         if($_.Fields["Your Field Name"].Value -eq '$name')
         {
                  $_.Editing.BeginEdit();
-                 $_['Title']=$_.Name;
+                 $_['Your Field Name']=$_.Name;
                  $_.Editing.EndEdit();
         }
     }    
